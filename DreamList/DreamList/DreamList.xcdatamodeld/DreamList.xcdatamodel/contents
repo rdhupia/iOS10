@@ -1,4 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DreamItem" representedClassName="DreamItem" syncable="YES" codeGenerationType="class">
+        <attribute name="created" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="targetDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toImage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Image" inverseName="toDreamItem" inverseEntity="Image" syncable="YES"/>
+        <relationship name="toItemType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ItemType" inverseName="toItem" inverseEntity="ItemType" syncable="YES"/>
+        <relationship name="toUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="toDreamItem" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Expense" representedClassName="Expense" syncable="YES" codeGenerationType="class">
+        <attribute name="expenseAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="expenseDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="expenseName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expenseType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="toExpense" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Image" representedClassName="Image" syncable="YES" codeGenerationType="class">
+        <attribute name="image" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="toDreamItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DreamItem" inverseName="toImage" inverseEntity="DreamItem" syncable="YES"/>
+        <relationship name="toUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="toImage" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Income" representedClassName="Income" syncable="YES" codeGenerationType="class">
+        <attribute name="incomeAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="incomeDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="incomeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="incomeType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="toIncome" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="ItemType" representedClassName="ItemType" syncable="YES" codeGenerationType="class">
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toItem" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DreamItem" inverseName="toItemType" inverseEntity="DreamItem" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="currentBalance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toDreamItem" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DreamItem" inverseName="toUser" inverseEntity="DreamItem" syncable="YES"/>
+        <relationship name="toExpense" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="toUser" inverseEntity="Expense" syncable="YES"/>
+        <relationship name="toImage" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Image" inverseName="toUser" inverseEntity="Image" syncable="YES"/>
+        <relationship name="toIncome" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Income" inverseName="toUser" inverseEntity="Income" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DreamItem" positionX="-531" positionY="-243" width="128" height="165"/>
+        <element name="Image" positionX="-252" positionY="-369" width="128" height="90"/>
+        <element name="ItemType" positionX="-452" positionY="-27" width="128" height="73"/>
+        <element name="User" positionX="-216" positionY="-207" width="128" height="193"/>
+        <element name="Expense" positionX="43" positionY="-273" width="128" height="120"/>
+        <element name="Income" positionX="34" positionY="-111" width="128" height="120"/>
+    </elements>
 </model>
