@@ -11,3 +11,4 @@
 * Core Data, Implementing CoreData, NSFetchedResultsController
 * Manual /  Codegen
 * Table View, Segment view, custom view, extensions
+
