@@ -13,6 +13,9 @@
 		397875251E4ABA1000694A1D /* BudgetApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 397875231E4ABA1000694A1D /* BudgetApp.xcdatamodeld */; };
 		397875271E4ABA1000694A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 397875261E4ABA1000694A1D /* Assets.xcassets */; };
 		3978752A1E4ABA1000694A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397875281E4ABA1000694A1D /* LaunchScreen.storyboard */; };
+		39B909061E590BB0006069E2 /* AddExpenseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B909051E590BB0006069E2 /* AddExpenseVC.swift */; };
+		39B909081E5951E5006069E2 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B909071E5951E5006069E2 /* DesignableButton.swift */; };
+		39B9090A1E595700006069E2 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B909091E595700006069E2 /* DesignableTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		397875261E4ABA1000694A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		397875291E4ABA1000694A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3978752B1E4ABA1000694A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39B909051E590BB0006069E2 /* AddExpenseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExpenseVC.swift; sourceTree = "<group>"; };
+		39B909071E5951E5006069E2 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		39B909091E595700006069E2 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 		397875321E4ABA2F00694A1D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				39B909071E5951E5006069E2 /* DesignableButton.swift */,
+				39B909091E595700006069E2 /* DesignableTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -87,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				3978751E1E4ABA1000694A1D /* MainVC.swift */,
+				39B909051E590BB0006069E2 /* AddExpenseVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -165,8 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				397875251E4ABA1000694A1D /* BudgetApp.xcdatamodeld in Sources */,
+				39B9090A1E595700006069E2 /* DesignableTextField.swift in Sources */,
 				3978751F1E4ABA1000694A1D /* MainVC.swift in Sources */,
 				3978751D1E4ABA1000694A1D /* AppDelegate.swift in Sources */,
+				39B909081E5951E5006069E2 /* DesignableButton.swift in Sources */,
+				39B909061E590BB0006069E2 /* AddExpenseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
