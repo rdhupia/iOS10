@@ -13,9 +13,13 @@
 		397875251E4ABA1000694A1D /* BudgetApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 397875231E4ABA1000694A1D /* BudgetApp.xcdatamodeld */; };
 		397875271E4ABA1000694A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 397875261E4ABA1000694A1D /* Assets.xcassets */; };
 		3978752A1E4ABA1000694A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397875281E4ABA1000694A1D /* LaunchScreen.storyboard */; };
+		39824D731E5BB37600299C72 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39824D721E5BB37600299C72 /* LoginVC.swift */; };
+		39824D751E5BB67300299C72 /* ExtensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39824D741E5BB67300299C72 /* ExtensionUIColor.swift */; };
+		399A75EA1E5B95FF008A7BFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399A75E91E5B95FF008A7BFB /* GoogleService-Info.plist */; };
 		39B909061E590BB0006069E2 /* AddExpenseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B909051E590BB0006069E2 /* AddExpenseVC.swift */; };
 		39B909081E5951E5006069E2 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B909071E5951E5006069E2 /* DesignableButton.swift */; };
 		39B9090A1E595700006069E2 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B909091E595700006069E2 /* DesignableTextField.swift */; };
+		8D561E45DA761A661D374695 /* Pods_BudgetApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD39F3579606F36AABC2CDD /* Pods_BudgetApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +31,15 @@
 		397875261E4ABA1000694A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		397875291E4ABA1000694A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3978752B1E4ABA1000694A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39824D721E5BB37600299C72 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		39824D741E5BB67300299C72 /* ExtensionUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIColor.swift; sourceTree = "<group>"; };
+		399A75E91E5B95FF008A7BFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		39B909051E590BB0006069E2 /* AddExpenseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExpenseVC.swift; sourceTree = "<group>"; };
 		39B909071E5951E5006069E2 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		39B909091E595700006069E2 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		5FF623E7EA5F97834C4FE5D3 /* Pods-BudgetApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BudgetApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BudgetApp/Pods-BudgetApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9BD39F3579606F36AABC2CDD /* Pods_BudgetApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BudgetApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4F597CAFC9C6DEA56245461 /* Pods-BudgetApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BudgetApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BudgetApp/Pods-BudgetApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D561E45DA761A661D374695 /* Pods_BudgetApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +59,8 @@
 			children = (
 				3978751B1E4ABA1000694A1D /* BudgetApp */,
 				3978751A1E4ABA1000694A1D /* Products */,
+				501384CB366FD3DE03576D79 /* Pods */,
+				D29E0F7CE5BF4FA8D70226BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +83,7 @@
 				3978751C1E4ABA1000694A1D /* AppDelegate.swift */,
 				397875261E4ABA1000694A1D /* Assets.xcassets */,
 				3978752B1E4ABA1000694A1D /* Info.plist */,
+				399A75E91E5B95FF008A7BFB /* GoogleService-Info.plist */,
 				397875231E4ABA1000694A1D /* BudgetApp.xcdatamodeld */,
 			);
 			path = BudgetApp;
@@ -87,6 +101,7 @@
 			children = (
 				39B909071E5951E5006069E2 /* DesignableButton.swift */,
 				39B909091E595700006069E2 /* DesignableTextField.swift */,
+				39824D741E5BB67300299C72 /* ExtensionUIColor.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -96,8 +111,26 @@
 			children = (
 				3978751E1E4ABA1000694A1D /* MainVC.swift */,
 				39B909051E590BB0006069E2 /* AddExpenseVC.swift */,
+				39824D721E5BB37600299C72 /* LoginVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		501384CB366FD3DE03576D79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FF623E7EA5F97834C4FE5D3 /* Pods-BudgetApp.debug.xcconfig */,
+				B4F597CAFC9C6DEA56245461 /* Pods-BudgetApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D29E0F7CE5BF4FA8D70226BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BD39F3579606F36AABC2CDD /* Pods_BudgetApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,9 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3978752E1E4ABA1000694A1D /* Build configuration list for PBXNativeTarget "BudgetApp" */;
 			buildPhases = (
+				BFC83A087830DEB882BC6748 /* [CP] Check Pods Manifest.lock */,
 				397875151E4ABA1000694A1D /* Sources */,
 				397875161E4ABA1000694A1D /* Frameworks */,
 				397875171E4ABA1000694A1D /* Resources */,
+				9D4F47A653954EBCC3CB42F3 /* [CP] Embed Pods Frameworks */,
+				A25028804D2F31F72BF1F4A7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,12 +197,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				3978752A1E4ABA1000694A1D /* LaunchScreen.storyboard in Resources */,
+				399A75EA1E5B95FF008A7BFB /* GoogleService-Info.plist in Resources */,
 				397875271E4ABA1000694A1D /* Assets.xcassets in Resources */,
 				397875221E4ABA1000694A1D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D4F47A653954EBCC3CB42F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BudgetApp/Pods-BudgetApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A25028804D2F31F72BF1F4A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BudgetApp/Pods-BudgetApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFC83A087830DEB882BC6748 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		397875151E4ABA1000694A1D /* Sources */ = {
@@ -175,6 +260,8 @@
 			files = (
 				397875251E4ABA1000694A1D /* BudgetApp.xcdatamodeld in Sources */,
 				39B9090A1E595700006069E2 /* DesignableTextField.swift in Sources */,
+				39824D731E5BB37600299C72 /* LoginVC.swift in Sources */,
+				39824D751E5BB67300299C72 /* ExtensionUIColor.swift in Sources */,
 				3978751F1E4ABA1000694A1D /* MainVC.swift in Sources */,
 				3978751D1E4ABA1000694A1D /* AppDelegate.swift in Sources */,
 				39B909081E5951E5006069E2 /* DesignableButton.swift in Sources */,
@@ -299,6 +386,7 @@
 		};
 		3978752F1E4ABA1000694A1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FF623E7EA5F97834C4FE5D3 /* Pods-BudgetApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C39863V99C;
@@ -312,6 +400,7 @@
 		};
 		397875301E4ABA1000694A1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4F597CAFC9C6DEA56245461 /* Pods-BudgetApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C39863V99C;

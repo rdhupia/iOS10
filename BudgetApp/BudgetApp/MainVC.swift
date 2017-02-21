@@ -10,6 +10,7 @@ import UIKit
 
 class MainVC: UIViewController {
     
+    @IBOutlet weak var logoutBtn: UIBarButtonItem!
     
     @IBOutlet weak var addIncomeBtn: UIButton!
     @IBOutlet weak var addExpenseBtn: UIButton!
@@ -37,6 +38,11 @@ class MainVC: UIViewController {
         
     }
    
+    // Handle logout
+    @IBAction func logoutBtnPressed(_ sender: UIBarButtonItem) {
+        let loginController = LoginVC()
+        present(loginController, animated: true, completion: nil)
+    }
 
 
 }

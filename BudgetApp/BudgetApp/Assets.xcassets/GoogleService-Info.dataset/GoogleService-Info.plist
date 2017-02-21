@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>569703492026-iumqhm92m0oqprb7prvfr2kclv1kn240.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.569703492026-iumqhm92m0oqprb7prvfr2kclv1kn240</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAVw_Ix7YfJbP7Bgc-np3b50A6d6A_6eTg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>569703492026</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.rdhupia.project.BudgetApp</string>
+	<key>PROJECT_ID</key>
+	<string>budgetapp-bf7da</string>
+	<key>STORAGE_BUCKET</key>
+	<string>budgetapp-bf7da.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:569703492026:ios:03bb4aaef14729d4</string>
+	<key>DATABASE_URL</key>
+	<string>https://budgetapp-bf7da.firebaseio.com</string>
+</dict>
+</plist>
