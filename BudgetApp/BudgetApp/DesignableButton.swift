@@ -13,7 +13,7 @@ import UIKit
 class DesignableButton: UIButton {
 
     // Give a border to button
-    // MARK: Add a prop that can be inspected insidi attribute inspector
+    // MARK: Add a prop that can be inspected inside attribute inspector
     @IBInspectable
     var borderWidth: CGFloat = 0.0 {
         didSet {

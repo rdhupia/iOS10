@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        // Configure Firebase
+        // MARK: FIREBASE Configure Firebase
         FIRApp.configure()
         
         // Override point for customization after application launch.

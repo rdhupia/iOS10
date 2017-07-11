@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3967D9CD1F11A065008460DF /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3967D9CC1F11A064008460DF /* Transaction.swift */; };
 		3978751D1E4ABA1000694A1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3978751C1E4ABA1000694A1D /* AppDelegate.swift */; };
 		3978751F1E4ABA1000694A1D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3978751E1E4ABA1000694A1D /* MainVC.swift */; };
 		397875221E4ABA1000694A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397875201E4ABA1000694A1D /* Main.storyboard */; };
 		397875251E4ABA1000694A1D /* BudgetApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 397875231E4ABA1000694A1D /* BudgetApp.xcdatamodeld */; };
 		397875271E4ABA1000694A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 397875261E4ABA1000694A1D /* Assets.xcassets */; };
 		3978752A1E4ABA1000694A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397875281E4ABA1000694A1D /* LaunchScreen.storyboard */; };
+		397F04581F0F508A00AD0760 /* AddExpenseVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397F04571F0F508A00AD0760 /* AddExpenseVCTableViewCell.swift */; };
 		39824D731E5BB37600299C72 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39824D721E5BB37600299C72 /* LoginVC.swift */; };
 		39824D751E5BB67300299C72 /* ExtensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39824D741E5BB67300299C72 /* ExtensionUIColor.swift */; };
 		399A75EA1E5B95FF008A7BFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399A75E91E5B95FF008A7BFB /* GoogleService-Info.plist */; };
@@ -23,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3967D9CC1F11A064008460DF /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		397875191E4ABA1000694A1D /* BudgetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3978751C1E4ABA1000694A1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3978751E1E4ABA1000694A1D /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 		397875261E4ABA1000694A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		397875291E4ABA1000694A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3978752B1E4ABA1000694A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		397F04571F0F508A00AD0760 /* AddExpenseVCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExpenseVCTableViewCell.swift; sourceTree = "<group>"; };
 		39824D721E5BB37600299C72 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		39824D741E5BB67300299C72 /* ExtensionUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIColor.swift; sourceTree = "<group>"; };
 		399A75E91E5B95FF008A7BFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 				397875321E4ABA2F00694A1D /* View */,
 				397875331E4ABA3600694A1D /* Controller */,
 				397875201E4ABA1000694A1D /* Main.storyboard */,
+				397F04571F0F508A00AD0760 /* AddExpenseVCTableViewCell.swift */,
 				397875281E4ABA1000694A1D /* LaunchScreen.storyboard */,
 				3978751C1E4ABA1000694A1D /* AppDelegate.swift */,
 				397875261E4ABA1000694A1D /* Assets.xcassets */,
@@ -92,6 +97,7 @@
 		397875311E4ABA2800694A1D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3967D9CC1F11A064008460DF /* Transaction.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				397875251E4ABA1000694A1D /* BudgetApp.xcdatamodeld in Sources */,
+				397F04581F0F508A00AD0760 /* AddExpenseVCTableViewCell.swift in Sources */,
 				39B9090A1E595700006069E2 /* DesignableTextField.swift in Sources */,
 				39824D731E5BB37600299C72 /* LoginVC.swift in Sources */,
+				3967D9CD1F11A065008460DF /* Transaction.swift in Sources */,
 				39824D751E5BB67300299C72 /* ExtensionUIColor.swift in Sources */,
 				3978751F1E4ABA1000694A1D /* MainVC.swift in Sources */,
 				3978751D1E4ABA1000694A1D /* AppDelegate.swift in Sources */,

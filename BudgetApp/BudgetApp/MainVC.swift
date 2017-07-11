@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class MainVC: UIViewController {
     
@@ -19,31 +20,78 @@ class MainVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        let ref = FIRDatabase.database().reference(fromURL: "https://budgetapp-bf7da.firebaseio.com/")
+//        ref.updateChildValues(["someValue": 1234])
+        
+        // User is not logged in
+        if FIRAuth.auth()?.currentUser?.uid == nil {
+            perform(#selector(handleLoggedOutUser), with: nil, afterDelay: 0)
+        }
     }
 
     // Add button toggles, gives option to add income and expense
     @IBAction func AddPressed(_ sender: UIButton) {
         
-        if addBtn.titleLabel!.text == "+" {
+        if addBtn.titleLabel!.text == "◉" {
             addIncomeBtn.isHidden = false
             addExpenseBtn.isHidden = false
-            addBtn.setTitle("◉", for: .normal)
+            addBtn.setTitle("+", for: .normal)
             addBtn.backgroundColor = UIColor.white
         } else {
             addIncomeBtn.isHidden = true
             addExpenseBtn.isHidden = true
-            addBtn.setTitle("+", for: .normal)
+            addBtn.setTitle("◉", for: .normal)
             
         }
         
     }
    
-    // Handle logout
+    // Handle logout: User clicks logout
     @IBAction func logoutBtnPressed(_ sender: UIBarButtonItem) {
-        let loginController = LoginVC()
-        present(loginController, animated: true, completion: nil)
+        do {
+            try FIRAuth.auth()?.signOut()
+        } catch let logoutError {
+            print(logoutError)
+        }
+        
+        // Go to Login/Registration screen
+        present(LoginVC(), animated: true, completion: nil)
     }
 
-
+    // Handle logout: No user logged in (without animation)
+    func handleLoggedOutUser() {
+        do {
+            try FIRAuth.auth()?.signOut()
+        } catch let logoutError {
+            print(logoutError)
+        }
+        
+        // Go to Login/Registration screen
+        present(LoginVC(), animated: false, completion: nil)
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
