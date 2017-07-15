@@ -27,7 +27,7 @@ class AddExpenseVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     var ref: FIRDatabaseReference?
     var databaseHandle: FIRDatabaseHandle?
     
-    var typesOfExpenses = ["Rent", "Mortgage(s)", "Condo fee", "House/Tenant insurance", "Utility Bills", "Lease/Loan payment", "Vehicle insurance", "Life/Health insurance", "Bank/Credit card fees", "Streaming services", "Clothing/Shoes", "Eat out/Entertainment", "Groceries", "Gifts", "Vehicle Maintenance", "Home Maintenance", "Gas/Parking", "Local transit", "Travel (Flights, hotels)", "Personal care", "Day Care", "Subscriptions", "Miscellaneous"]
+    var typesOfExpenses = ["Rent", "Mortgage(s)", "Condo fee", "Home nsurance", "Utilities", "Loan payment", "Insurance payments", "Bank fees", "Streaming services", "Clothes", "Entertainment", "Eat Out", "Groceries", "Gifts", "Maintenance", "Gas/Parking", "Local transit", "Travel", "Personal care", "Day Care", "Subscriptions", "Others"]
 
     var transactions = [Transaction]()
     
@@ -141,7 +141,7 @@ class AddExpenseVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
             showOrHideDatePicker(hideDatePicker: true)
             self.typeExpenseDropDown.isHidden = false
             self.myTableView.isHidden = true
-            //self.view.endEditing(true)
+            self.view.endEditing(true)
         }
     }
     
