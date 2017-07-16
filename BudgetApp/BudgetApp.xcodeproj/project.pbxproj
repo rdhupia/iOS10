@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3967D9CD1F11A065008460DF /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3967D9CC1F11A064008460DF /* Transaction.swift */; };
+		39692C841F1AECCC00844E4D /* AddIncomeVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39692C831F1AECCC00844E4D /* AddIncomeVCTableViewCell.swift */; };
 		3978751D1E4ABA1000694A1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3978751C1E4ABA1000694A1D /* AppDelegate.swift */; };
 		3978751F1E4ABA1000694A1D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3978751E1E4ABA1000694A1D /* MainVC.swift */; };
 		397875221E4ABA1000694A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397875201E4ABA1000694A1D /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		3967D9CC1F11A064008460DF /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		39692C831F1AECCC00844E4D /* AddIncomeVCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddIncomeVCTableViewCell.swift; sourceTree = "<group>"; };
 		397875191E4ABA1000694A1D /* BudgetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3978751C1E4ABA1000694A1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3978751E1E4ABA1000694A1D /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				397875331E4ABA3600694A1D /* Controller */,
 				397875201E4ABA1000694A1D /* Main.storyboard */,
 				397F04571F0F508A00AD0760 /* AddExpenseVCTableViewCell.swift */,
+				39692C831F1AECCC00844E4D /* AddIncomeVCTableViewCell.swift */,
 				397875281E4ABA1000694A1D /* LaunchScreen.storyboard */,
 				3978751C1E4ABA1000694A1D /* AppDelegate.swift */,
 				397875261E4ABA1000694A1D /* Assets.xcassets */,
@@ -276,6 +279,7 @@
 				3978751F1E4ABA1000694A1D /* MainVC.swift in Sources */,
 				39CB8A481F1547DB00B18062 /* AddIncomeVC.swift in Sources */,
 				3978751D1E4ABA1000694A1D /* AppDelegate.swift in Sources */,
+				39692C841F1AECCC00844E4D /* AddIncomeVCTableViewCell.swift in Sources */,
 				39B909081E5951E5006069E2 /* DesignableButton.swift in Sources */,
 				39B909061E590BB0006069E2 /* AddExpenseVC.swift in Sources */,
 			);

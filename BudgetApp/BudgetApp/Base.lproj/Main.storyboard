@@ -491,6 +491,7 @@
                                     <!--2017-02-19 16:21:29 +0000-->
                                 </date>
                                 <connections>
+                                    <action selector="datePickerValueChanged:" destination="rMG-UT-Hpx" eventType="valueChanged" id="Fvc-oo-bDH"/>
                                     <action selector="datePickerValueChanged:" destination="BEX-Vu-XyJ" eventType="valueChanged" id="kfV-p2-zF8"/>
                                 </connections>
                             </datePicker>
@@ -550,14 +551,14 @@
                                 <rect key="frame" x="0.0" y="271" width="320" height="297"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="incomeCell" rowHeight="44" id="lbT-om-hVh" customClass="AddExpenseVCTableViewCell" customModule="BudgetApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="incomeCell" rowHeight="44" id="lbT-om-hVh" customClass="AddIncomeVCTableViewCell" customModule="BudgetApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lbT-om-hVh" id="hxU-iZ-hfw">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 80000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yav-2D-6rE">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 80000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yav-2D-6rE" userLabel="Income Amount Field">
                                                     <rect key="frame" x="34" y="13" width="66" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="66" id="5GY-5m-9fj"/>
@@ -566,13 +567,13 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Utility Bills" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSM-TT-QYI">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Utility Bills" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSM-TT-QYI" userLabel="Income Category Field">
                                                     <rect key="frame" x="106" y="13" width="80" height="18"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6o-VO-6aD">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6o-VO-6aD" userLabel="Income Date Field">
                                                     <rect key="frame" x="8" y="8" width="20" height="27.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="20" id="e1I-go-tez"/>
@@ -581,7 +582,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shoppers Drug Mart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kP-rx-gZF">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shoppers Drug Mart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kP-rx-gZF" userLabel="Income Descrip Field">
                                                     <rect key="frame" x="192" y="13" width="128" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="128" id="Fg4-Lw-LGf"/>
@@ -605,10 +606,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="amountField" destination="Yav-2D-6rE" id="gfU-5n-ULF"/>
-                                            <outlet property="categoryField" destination="vSM-TT-QYI" id="V33-RF-Oxi"/>
-                                            <outlet property="dateField" destination="K6o-VO-6aD" id="qVJ-zY-Cfd"/>
-                                            <outlet property="descripField" destination="4kP-rx-gZF" id="c3l-Hc-792"/>
+                                            <outlet property="incomeAmountField" destination="Yav-2D-6rE" id="Ygr-fO-5Ow"/>
+                                            <outlet property="incomeCategoryField" destination="vSM-TT-QYI" id="4hI-iQ-imB"/>
+                                            <outlet property="incomeDateField" destination="K6o-VO-6aD" id="brO-yc-Swm"/>
+                                            <outlet property="incomeDescripField" destination="4kP-rx-gZF" id="Xl8-Tr-8Sg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
